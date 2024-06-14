@@ -1,11 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>My TO-DO List</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -25,7 +28,20 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="container">
+    <div class="inner-wrapper">
+      <h3 class="todolist">My TO-DO List</h3>
+      <form class="input-wrapper" id="input-wrapper">
+        <input type="text" id="input" placeholder="Add tasks here"/>
+        <button id="button">Add</button>
+      </form>
+      <ul class="list" id="list">
+        <li><input type="checkbox" class="checkbox"/><span class="item">wash clothes</span><span class="delete"></span></li>
+        <li><input type="checkbox" class="checkbox"/><span class="item checked">wash clothes<span class="delete"></span></span></li>
+
+      </ul>
+    </div>
+  </div>
   <script src="js/app.js"></script>
 
 </body>
