@@ -74,11 +74,17 @@ body{
   background-image: url("/img/crossed.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
   margin-left: 10px;
   margin-top: 10px;
+  padding-left: 10px;
   width: 22px;
   height: 22px;
   vertical-align: bottom;
-  transform: scale(0.75);
+  transition: background-color 0.3s;
+  border-radius: 50%;
+}
+.delete:hover{
+  background-color: #e4e4e4;
 }
