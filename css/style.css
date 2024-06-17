@@ -69,6 +69,7 @@ body{
 }
 .list span.checked{
   text-decoration: line-through;
+  color: grey;
 }
 .delete{
   background-image: url("/img/crossed.svg");
